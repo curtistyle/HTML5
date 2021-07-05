@@ -40,9 +40,14 @@
  				</hgroup>
  			</header>
 
- 			<p>Noticia 1</p> <!-- 'p' se utiliza para distribuir el texto en parrafos. -->
- 			<p>Seguimos hablando de noticia 1</p>
- 			<p>Terminamos de hablar de la noticia 1</p>
+ 			<figure> <!-- El elemento 'figure' representa una pieza de documento autocontenido que se utiliza habitualmente para encerrar imagenes, graficos, tablas de referencia, videos, poemas, fragmentos de codigo, etc. -->
+ 				<img src="img/smash.jpg"/> <!-- 'img' representa una imagen en el documento. -->
+ 				<figcaption>The Offspring - Smash</figcaption> <!-- representa un subtitulo o leyenda asociado al contenido del elemento padre 'figure'. -->
+ 			</figure>
+
+ 			<p><mark>Noticia 1</mark></p> <!-- El elemento 'mark' marca un texto (resalta), sin importancia ni énfasis. (De acuerdo a circunstancias del momento) -->
+ 			<p>Seguimos hablando de <em>noticia 1</em></p> <!-- El elemento 'em' se utiliza para indicar énfasis. Sustituye a la etiqueta <i></i> -->
+ 			<p>Terminamos de hablar de la <strong>noticia 1</strong></p> <!-- El elemento 'strong' se utiliza para marcar texto importante. El elemento 'p' se utiliza para distribuir el texto en parrafos. -->
 
  			<footer>
  				<p>Comentarios de usuarios</p>
@@ -54,8 +59,8 @@
  			<header>
  				<h2>Titulo de la noticia 2</h2>
  			</header>	
- 				<p>Noticia 2</p> 
- 				<p>Seguimos hablando de noticia 2</p>
+ 				<p><cite>Lo que el viento se llevo</cite></p> <!-- El elemento 'cite' Marca una referencia a una fuente, o el autor de un texto citado -->
+ 				<p>Una de las peliculas mas larga en la historia de l cine es <cite>Lo que el viento se llevo</cite></p> 
  				<p>Terminamos de hablar de la noticia 2</p>
 
  			<footer>
@@ -70,6 +75,7 @@
  					<h2>Titulo de la noticia 3</h2>
  					<h3>Subtitulo de la noticia 3</h3>
  				</hgroup>
+ 				<time datetime="2014/01/31" pubdate>Noticia publicada en el dia 31/01/2014</time>
  			</header>
  				<p>Noticia 3</p> 
  				<p>Seguimos hablando de noticia 3</p>
@@ -78,7 +84,7 @@
  	</section>
 
  	<footer> <!-- 'footer' representa el pie de pagina para el contenido. Un pie de pagina tipicamente contiene informacion acerca de el autor de la seccion, datos de derechos de autor o enlaces a documentos relacionados. -->
- 		Derechos reservados. Telefono: 6548643241
+ 		<small>Derechos reservados.</small> <address>Telefono: 6548643241</address>  <!-- El elemento 'small' hace el tamaño del texto una talla más pequeña que el tamaño minimo de fuente del navegador. Se utiliza para representar comentarios laterales, derechos de autor y texto legal, independientemente de su estilo de presentacion. El elemento 'address' Se utliza para aportar informacion de contacto -->
  	</footer>
  
 </body>
