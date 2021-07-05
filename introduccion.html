@@ -10,12 +10,12 @@
 </head>
 
 <body> <!-- Representa el contenido de un documento HTML -->
-
-	<header> <!-- El header representa el encabezado de nuestra pagina. Puede contener un logo, formulario de busqueda, un nombre de autor y otros componentes -->
+	<!-- El atributo global 'id' define un identificador unico (ID) el cual no debe repetirse en todo el documento. Su proposito es identificar el elemento vinculado (usando un identificador de fragmento), en scripts u hojas de estilos (con CSS) -->
+	<header id="cabeceraweb"> <!-- El header representa el encabezado de nuestra pagina. Puede contener un logo, formulario de busqueda, un nombre de autor y otros componentes -->
 		<h1>Este sería el título de nuestra web</h1> <!-- Los elementos de enzabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante. Un elemento de enzabezado describe brevemente el tema de la sección que presenta. -->
 	</header>	
 
-	<nav> <!-- 'nav' representa una sección de una pagina cuyo proposito es proporcionar enlaces de navegaciion, ya sea dentro del documento actual o a otros documentos. Ejemplo: Tabla de navegacion o indices. -->
+	<nav id="navegacionprincipal"> <!-- 'nav' representa una sección de una pagina cuyo proposito es proporcionar enlaces de navegaciion, ya sea dentro del documento actual o a otros documentos. Ejemplo: Tabla de navegacion o indices. -->
 		<ul> <!-- Lista no ordenada --> 
 			<li>Quienes somos</li> <!-- los 'li' son los elementos de la lista -->
 			<li>Nuestros Productos</li>
@@ -24,13 +24,13 @@
 		</ul>
 	</nav>
 
- 	<aside> <!-- 'aside' representa una sección de una página que sonsiste en contenido que está indirectamente relacionado con el contenido principal del documento. Esta secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicacion al margen como una definicion de glosario, elementos relacionados indirectamente, como publicidad, la biografia del autor, o en aplicaciones web, la informacion de perfil o enlaces a blogs relacionados -->
+ 	<aside id="barralateral"> <!-- 'aside' representa una sección de una página que sonsiste en contenido que está indirectamente relacionado con el contenido principal del documento. Esta secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicacion al margen como una definicion de glosario, elementos relacionados indirectamente, como publicidad, la biografia del autor, o en aplicaciones web, la informacion de perfil o enlaces a blogs relacionados -->
  		<blockquote>Primer elemento</blockquote> <!-- blockquote : crea citas en bloque, marca las citas a otros autores. -->
  		<blockquote>Segundo elemento</blockquote>
  		<blockquote>Tercer elemento</blockquote>
  	</aside>
 
- 	<section> <!-- 'section' representa una seccion generica de un documento. -->
+ 	<section id="contenidoprincipal"> <!-- 'section' representa una seccion generica de un documento. -->
  		<article>
 
  			<header>
@@ -83,10 +83,33 @@
  		</article>
  	</section>
 
- 	<footer> <!-- 'footer' representa el pie de pagina para el contenido. Un pie de pagina tipicamente contiene informacion acerca de el autor de la seccion, datos de derechos de autor o enlaces a documentos relacionados. -->
+ 	<footer id="pieprincipal"> <!-- 'footer' representa el pie de pagina para el contenido. Un pie de pagina tipicamente contiene informacion acerca de el autor de la seccion, datos de derechos de autor o enlaces a documentos relacionados. -->
  		<small>Derechos reservados.</small> <address>Telefono: 6548643241</address>  <!-- El elemento 'small' hace el tamaño del texto una talla más pequeña que el tamaño minimo de fuente del navegador. Se utiliza para representar comentarios laterales, derechos de autor y texto legal, independientemente de su estilo de presentacion. El elemento 'address' Se utliza para aportar informacion de contacto -->
  	</footer>
  
 </body>
 
 </html>
+
+<!--   *Evolucion
+
+1. HTML con atributos en etiqueta
+2. Separación estructura y apariencia
+	a. Estructura = HTML; Apariencia = CSS
+3. Estructura = HTML; Apariencia = CSS3
+
+       *¿Donde colocar el codigo CSS?
+1. En archivo independiente
+	a. Archivo independiente con extencion CSS
+2. En cabecera de documento HTML.
+	a. Dentro de entiqueta 'head'
+3. Dentro de etiqueta 'head' (Esto no es aconsejable)
+	a. Estilo inline. En casos muy concretos
+
+	  *Modelo caja-contenejor
+1. Dos tipos de etiquetas en HTML
+	a. Etiquetas block
+	b. Etiquetas inline
+2. La mayoria de etiquetas de estructura son etiquetas block
+
+-->
