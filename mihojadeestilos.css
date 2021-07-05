@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 'body' es un selector de etiqueta
+	'background-color' es una propiedad de CSS que define el color de fondo de un elemento, puede ser el valor de un color o la palabra "transparente"
+
+body{
+	background-color: #DEECBE
+}
+
+
+*/
+
+#cabeceraweb{
+	background-color: aqua
+}
+
+#navegacionprincipal{
+	background-color: red
+}
+
+#barralateral{
+	background-color: green
+}
+
+#contenidoprincipal{
+	background-color: purple
+}
+
+#pieprincipal{
+	background-color: yellow
+}
