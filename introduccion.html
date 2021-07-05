@@ -15,7 +15,7 @@
 		<h1>Este sería el título de nuestra web</h1> <!-- Los elementos de enzabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante. Un elemento de enzabezado describe brevemente el tema de la sección que presenta. -->
 	</header>	
 
-	<nav>
+	<nav> <!-- 'nav' representa una sección de una pagina cuyo proposito es proporcionar enlaces de navegaciion, ya sea dentro del documento actual o a otros documentos. Ejemplo: Tabla de navegacion o indices. -->
 		<ul> <!-- Lista no ordenada --> 
 			<li>Quienes somos</li> <!-- los 'li' son los elementos de la lista -->
 			<li>Nuestros Productos</li>
@@ -24,7 +24,62 @@
 		</ul>
 	</nav>
 
- 
+ 	<aside> <!-- 'aside' representa una sección de una página que sonsiste en contenido que está indirectamente relacionado con el contenido principal del documento. Esta secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicacion al margen como una definicion de glosario, elementos relacionados indirectamente, como publicidad, la biografia del autor, o en aplicaciones web, la informacion de perfil o enlaces a blogs relacionados -->
+ 		<blockquote>Primer elemento</blockquote> <!-- blockquote : crea citas en bloque, marca las citas a otros autores. -->
+ 		<blockquote>Segundo elemento</blockquote>
+ 		<blockquote>Tercer elemento</blockquote>
+ 	</aside>
+
+ 	<section> <!-- 'section' representa una seccion generica de un documento. -->
+ 		<article>
+
+ 			<header>
+ 				<hgroup> <!-- El elemento 'hgroup' representa al bloque de encabezado de una seccion, y usualmente agrupa encabezados contecutivos(<h1> a <h6>). Un enzabezado de niveles multiples puede ser usado para proveer sobtitulos, titulos alternativos o eslóganes -->
+ 					<h2>Titulo de la noticia 1</h2>
+ 					<h3>Subtitulo de la noticia 1</h3>
+ 				</hgroup>
+ 			</header>
+
+ 			<p>Noticia 1</p> <!-- 'p' se utiliza para distribuir el texto en parrafos. -->
+ 			<p>Seguimos hablando de noticia 1</p>
+ 			<p>Terminamos de hablar de la noticia 1</p>
+
+ 			<footer>
+ 				<p>Comentarios de usuarios</p>
+ 			</footer>
+
+ 		</article>
+
+ 		<article> <!-- El elemento 'article' es un contenedor de bloques de contenido -->
+ 			<header>
+ 				<h2>Titulo de la noticia 2</h2>
+ 			</header>	
+ 				<p>Noticia 2</p> 
+ 				<p>Seguimos hablando de noticia 2</p>
+ 				<p>Terminamos de hablar de la noticia 2</p>
+
+ 			<footer>
+ 				<p>Comentarios</p>
+ 			</footer>
+
+ 		</article>
+
+ 		<article>
+ 			<header>
+ 				<hgroup>
+ 					<h2>Titulo de la noticia 3</h2>
+ 					<h3>Subtitulo de la noticia 3</h3>
+ 				</hgroup>
+ 			</header>
+ 				<p>Noticia 3</p> 
+ 				<p>Seguimos hablando de noticia 3</p>
+ 				<p>Terminamos de hablar de la noticia 3</p>
+ 		</article>
+ 	</section>
+
+ 	<footer> <!-- 'footer' representa el pie de pagina para el contenido. Un pie de pagina tipicamente contiene informacion acerca de el autor de la seccion, datos de derechos de autor o enlaces a documentos relacionados. -->
+ 		Derechos reservados. Telefono: 6548643241
+ 	</footer>
  
 </body>
 
