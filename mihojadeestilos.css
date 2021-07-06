@@ -12,21 +12,33 @@ body{
 */
 
 #cabeceraweb{
-	background-color: aqua
+	background-color: aqua;
 }
 
 #navegacionprincipal{
-	background-color: red
+	background-color: red;
 }
 
 #barralateral{
-	background-color: green
+	background-color: green;
+	float: left;
+	height: 1160px;
 }
 
 #contenidoprincipal{
-	background-color: purple
+	background-color: purple;
+	margin-left: 220px;
+	padding-left: 15px;
+	padding-top: 15px;
 }
 
 #pieprincipal{
-	background-color: yellow
+	background-color: yellow;
+	clear:both;
+	margin-top: 20px;
+}
+
+li{
+	background-color: yellowgreen;
+	display:inline;
 }
