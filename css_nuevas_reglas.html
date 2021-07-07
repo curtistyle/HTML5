@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	
+<style>
+	p[name^="mis"]{  /* Amplica el estilo a los 'name' que comienzan con "mis" */
+		color: red;	
+	}	
+	p[name$="nio"]{  /* Amplica el estilo a los 'name' que terminan con "nio" */
+		color : blue;
+	}
+	p[name*="ti"]{
+		color: orange;  /* Aplica el estilo a cualquier 'name' que contenga la palabra "ti" en cualquier parte. */
+	}
+	
+	/* Pseoudoclases*/
+	p:nth-child(7){
+		color: aqua;
+	}
+</style>
+	
+</head>
+
+<body>
+	<p name="miselementos">Hola</p>
+	<p name="miselementos">Adios</p>
+	<p name="disenio">Lunes</p>
+	<p name="estilo">Martes</p>
+	<p name="estilo">Miercoles</p>
+	<p name="estilo">Jueves</p>
+	<p>Viernes</p>
+	
+</body>
+</html>
