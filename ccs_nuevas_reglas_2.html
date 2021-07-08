@@ -5,21 +5,46 @@
 <title>Documento sin título</title>
 
 <style>
-	#principal{
-		width: 500px;
-		background-color: green;
-		text-align: center;
-		margin: 15px auto;
-		padding: 15px;
-		border: 3px solid red;
-		border-radius: 15px;
-		box-shadow: #999 5px 5px 5px;
+#principal{
+	width: 500px;
+/*	background-color: green;*/
+	text-align: center;
+	margin: 55px auto;
+	padding: 15px;
+	border: 3px solid red;
+	border-radius: 15px;
+	box-shadow: #999 5px 5px 5px;
+	/*Degradados*/
+	background: -moz-linear-gradient(bottom, blue, red);
+	background: -webkit-radial-gradient(center, ellipse, blue ,green);
+	background: -ms-linear-gradient(top, blue, green);
+	background: -o-linear-gradient(top, blue, green);
+	/*borde exterior*/
+	outline:2px dashed red;
+	outline-offset: 10px;
+	/*Escalar un elemento*/
+	-webkit-transform:scale(1.5);
+	/* Rotar un elemento
+	-webkit-transform:rotate(15deg); */
+	/* Cambiar perspectica
+	-webkit-transform:skew(30deg)*/
+	-webkit-transition:-webkit-transform 1s ease 0.5s;
+}
+	/*pseudoclases*/
+	#principal:hover{
+		-webkit-transform:rotate(15deg);
 	}
 	
-	#titulo{
-		font: bold 36px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-		text-shadow: yellow 3px 3px 3px;
-	}
+@font-face {
+	font-family: 'MiPropiaFuente';
+	src: url("fuentes/Hello_Pirates.otf");
+}
+	
+#titulo{
+    font: bold 36px 'MiPropiaFuente';
+    text-shadow: 3px 3px 5px #173D6B;
+	color:rgba(208,35,38,0.82) /*transparencia*/
+}
 </style>
 
 </head>
