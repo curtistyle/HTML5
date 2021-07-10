@@ -1,0 +1,97 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+
+
+h1{
+    font: normal 2.4em verdana, Geneva; /* Tamanio y tipo de letra*/
+    background: -webkit-linear-gradient(top, rgb(255, 230, 0), rgba(0, 0, 0, 0.863)); /* Degradado lineal */
+    background: -moz-linear-gradient(top, rgb(255, 230, 0), rgba(0, 0, 0, 0.863)); 
+    width: 25%; /*tamanio del h1*/
+    border-radius: 15px; /*redondear las esquinas del h1*/
+    margin: 5px auto; /*margen exterior del h1*/
+    text-align: center; /*Centrar el texto*/
+    padding: 15px; /*margen interior del h1 con respecto al texto*/
+    color: white; /*color del texto del h1*/
+    box-shadow: black 5px 5px 15px;
+    text-shadow: white 2px 2px 10px;
+}
+
+h2{
+    font: bold 1.7em verdana, geneva;
+    margin:0;
+    padding: 5px 0px 5px 8px;
+    color: red;
+
+}
+
+h3{
+    font: bold 1.1em verdana, Geneva;
+    margin: 10px auto;
+    padding: 5px 0px 5px 8px;
+    color: red;
+}
+p{
+    margin: 10px 10px auto;
+}
+
+#reseña{
+    background-color: bisque;
+    margin: 20px auto;
+    padding: 10px;
+    font: normal 1.0em times;
+}
+
+#albunes{
+    width: 91% ; /*ancho*/
+    border-top: 2px dashed grey;
+    margin: 15px auto;
+
+}
+
+figure{
+    float:left; 
+}
+
+figure img{
+    padding: 5px;
+    background:grey;
+    -webkit-transition-duration:0.3s;
+    /*-webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;*/
+    /*-moz-transition: -moz-transform 0.3s ease-in-out 0.1;*/
+}
+
+/*pseudoclase*/
+figure img:hover{
+    -webkit-transform: scale(1.2);
+    box-shadow:rgb(109, 109, 109) 5px 5px 10px;
+    /*-moz-transform: scale(1.2);*/
+}
+
+figcaption{
+    font-family: arial;
+    text-align: center;
+    font-size: 0.9em;    
+}
+
+footer{
+    clear: both;
+    padding-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p{
+    font:1.6em arial;
+    color:rgba(114, 112, 112, 0.548);
+    margin:10px 10px 10px;
+}
