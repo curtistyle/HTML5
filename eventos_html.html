@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos html</title>
+
+    <script>
+
+        var imagen;
+        function tipoalbum(){
+            alert("The Offspring - Americana");
+        }
+        /*
+        function daTipoAlbum(){
+            // document.getElementsByTagName("img")[0].onclick=tipoalbum;
+
+            var imagen = document.getElementsByTagName("img")[0];
+            //manejador de evento
+            imagen.addEventListener("click",tipoalbum,false);
+        }
+
+        */
+
+        function manejaAlbum(){
+            imagen = document.getElementsByTagName("img")[0];
+            imagen.addEventListener("mouseover", imagenCrecer,false);
+            imagen.addEventListener("mouseout", menguar,false);
+            imagen.addEventListener("click",tipoalbum,false)
+        }
+
+        function imagenCrecer(){
+            imagen.width=300;
+            imagen.height=300;
+        }
+
+        function menguar(){
+            imagen.width=200;
+            imagen.height=200;
+        }
+
+        window.onload=manejaAlbum;
+    </script>
+
+</head>
+<body>
+    
+    <p><img src="img/americana.jpg" width="200" height="200"></p>
+</body>
+</html>
