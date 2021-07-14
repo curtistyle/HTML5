@@ -5,3 +5,28 @@
     padding: 5px;
     border: 2px solid black;
 }
+
+nav{
+    margin: 5px 0;
+}
+
+#botones{
+    float: left;
+    width: 10.px;
+    height: 20px;
+}
+
+#barra{
+    background: white;
+    width: 255px;
+    height: 19px;
+    border: 1px solid gray;
+    margin-left: 50px;
+}
+
+#progreso{
+    position: absolute;
+    width: 0px;
+    height: 19px;
+    background: rgba(0, 0, 150, 2); 
+}
