@@ -46,28 +46,37 @@ A continuacion una lista de elementos estandar de HTML5:
 > *El elemento **`<hgroup>`** representa al bloque de encabezado de una sección, y usualmente agrupa encabezados consecutivos (`<h1>`  a `<h6>`) . Un encabezado de niveles multiples puede ser usado para proveer subtitulos, titulos alternativos o eslóganes.*
 
 - **`<header>` - Encabezado de una sección.**
+> *El elemento **`<header>`** contiene al encabezado de una sección o documento, donde se colocan habitualmente los encabezados, los vinculos de navegación, los formularios de búsqueda, los logos, las tablas de contenidos, las introducciones, etc. En muchos casos, los contenidos del encabezado de un documento son consistentes a lo largo de todo el sitio.*
 
 - **`<footer>` - El pie de una sección.**
+> *El elemento **`<footer>`** representa el pie de una sección o documento, donde los autores habitualmente colocan firmas, información acerca del auto, información de licencias, documentos relacionados, etc. En muchos casos, los contenidos del pie de un documento son consistentes a lo largo de todo el sitio.*
 
 - **`<address>` - Informacion de contacto del autor.**
+> *El contenido **`<address>`** provee información de contacto para el autor de la sección o documento, como una dirección postal, una dirección de correo electrónico, un número telefónico, una cuidad, un país, un códio postal, etc.*
 
 #### Agrupación de Contenido.
 
 - **`<p>` - Parrafo.**
+> *El elemento **`<p>`** es el apropiado para distribuir el texto en párrafos.*
 
 - **`<hr>` - Separador de contenido.**
+> *El elemento **`<hr>`** representa una divición tematica o un quiebre en el texto. Este quiebre puede dividir al contenido en dos fragmentos con tópicos diferentes o dos escenas en una novela. Los navegadaores habitualmente representan este quiebre visualmente, mediante una linea horizontal.*
 
 - **`<pre>` - Bloque de texto preformateado.**
+> *El elemento **`<pre>`** representa un bloque de texto preformateado donde, en contraste con otros elementos, los espacios continuos y los quiebres de lineas son respetados. Ademas los navegadores utilizan fuentes de ancho constante para represntar al texto en este elemento, lo que significa que todos los caracteres tendrán el mismo ancho.*
 
 - **`<blockquote>` - Cita en forma de bloque.**
-
+> *El elemento **`<blockquote>`** permite a los autores insertar citas en forma de bloques de contenido, usualmente compuesta por un párrafo, un grupo de parrafos o un conjunto de muchos otros elementos incluyendo imagenes (`<img>`), tablas (`<table>`) y articulos (`<article>`), entre otros. Esta es la principal diferencia entre este elemento y `<q>`, que está diseñado para citar únicamente lineas de texto. Adicionalmente, el recurso de donde se ha extraido la cita puede ser especificado en el atributo `cite`, proporcionandu su URL.*
 - **`<ol>` - Lista ordenada.**
+> *El elemento **`<ol>`** representa una lista ordenada de items que, en contraste las listas no ordenadas (elemento `<ul>`), produce un significado diferente si el orden de los items es alterado. Los items de ambas listas, ordenadas y no ordenadas, son representados por el elemento `<li>`.*
 
 - **`<ul>` - Lista no ordenada.**
-
+> *El elemento **`<ul>`** representa una lista no ordenada de items que, en contraste con las lista ordenadas (elemento `<ol>`), no produce significados diferentes si el orden de los ítems es alterado. Los ítems de ambas listas, ordenadas y no ordenadas, son representados por el elemento `<li>`.*
 - **`<menu>` - Insertar una barra de menu.**
+> *El elemento `<menu>` representa una barra de menú que consiste en una lista de comandos representadas por una lista no ordenada de ítems (elementos `<li>`). Este elemento es simplemente una alternativa semántica al elemento `<ul>` que se utiliza para representar una lista no ordenada de comandos.*
 
 - **`<figure>` - Informacion autocontenida.**
+> *El elemento `<figure>` representa a una pieza de documentos autocontenido que se utiliza habitualmente para encerrar imágenes, gráficos, tablas de referencia, videos, poemas, fragmentos de codigo, etc. *
 
 - **`<figcaption>` - Titulo para una figura.**
 
