@@ -43,6 +43,7 @@ A continuacion una lista de elementos estandar de HTML5:
 > *Los elementos de **encabezado** implementa seis niveles de encabezado del documento., `<h1>` es el más importante, y `<h6>` , el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que presenta. La informacion de encabezado puede ser usada por los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento automaticamente.*
 
 - **`<hgroup>` - Agrupa encabezados de una sección.**
+> *El elemento **`<hgroup>`** representa al bloque de encabezado de una sección, y usualmente agrupa encabezados consecutivos (`<h1>`  a `<h6>`) . Un encabezado de niveles multiples puede ser usado para proveer subtitulos, titulos alternativos o eslóganes.*
 
 - **`<header>` - Encabezado de una sección.**
 
