@@ -67,19 +67,56 @@ A continuacion una lista de elementos estandar de HTML5:
 
 - **`<blockquote>` - Cita en forma de bloque.**
 > *El elemento **`<blockquote>`** permite a los autores insertar citas en forma de bloques de contenido, usualmente compuesta por un párrafo, un grupo de parrafos o un conjunto de muchos otros elementos incluyendo imagenes (`<img>`), tablas (`<table>`) y articulos (`<article>`), entre otros. Esta es la principal diferencia entre este elemento y `<q>`, que está diseñado para citar únicamente lineas de texto. Adicionalmente, el recurso de donde se ha extraido la cita puede ser especificado en el atributo `cite`, proporcionandu su URL.*
+
 - **`<ol>` - Lista ordenada.**
 > *El elemento **`<ol>`** representa una lista ordenada de items que, en contraste las listas no ordenadas (elemento `<ul>`), produce un significado diferente si el orden de los items es alterado. Los items de ambas listas, ordenadas y no ordenadas, son representados por el elemento `<li>`.*
 
 - **`<ul>` - Lista no ordenada.**
 > *El elemento **`<ul>`** representa una lista no ordenada de items que, en contraste con las lista ordenadas (elemento `<ol>`), no produce significados diferentes si el orden de los ítems es alterado. Los ítems de ambas listas, ordenadas y no ordenadas, son representados por el elemento `<li>`.*
+
 - **`<menu>` - Insertar una barra de menu.**
-> *El elemento `<menu>` representa una barra de menú que consiste en una lista de comandos representadas por una lista no ordenada de ítems (elementos `<li>`). Este elemento es simplemente una alternativa semántica al elemento `<ul>` que se utiliza para representar una lista no ordenada de comandos.*
+> *El elemento **`<menu>`** representa una barra de menú que consiste en una lista de comandos representadas por una lista no ordenada de ítems (elementos `<li>`). Este elemento es simplemente una alternativa semántica al elemento `<ul>` que se utiliza para representar una lista no ordenada de comandos.*
 
 - **`<figure>` - Informacion autocontenida.**
-> *El elemento `<figure>` representa a una pieza de documentos autocontenido que se utiliza habitualmente para encerrar imágenes, gráficos, tablas de referencia, videos, poemas, fragmentos de codigo, etc. *
+> *El elemento **`<figure>`** representa a una pieza de documentos autocontenido que se utiliza habitualmente para encerrar imágenes, gráficos, tablas de referencia, videos, poemas, fragmentos de codigo, etc. Ésta, podrian ser acompañada por una leyenda o titulo (elemento `<figcaption>`) que puede usarse para hacer una referencia al fragmento desde alguna otra parte del documento. Ademas del titulo opcional, un elemento `<figure>` puede contener a otros elementos como imágenes(`<img>`), parrafos(`<p>`), código de computadora(`<code>`), citas(`<cite>`), etc.*
 
 - **`<figcaption>` - Titulo para una figura.**
+> *El elemento **`<figcaption>`** representa un titulo o leyenda de un fragmento de contenido(`<figure>`).*
 
 - **`<main>` - Contenido principal de una sección.**
+> *El elemento **`<main>`** es un contenedor para los temas centrales de un documento o sección. Este contenido central puede interpretarse como todo lo que resta luego de quitar anuncios. encabezados(`<header>`), pies(`<footer>`)*
 
 - **`<div>` - Contenedor genérico para bloques de texto.**
+> *El elemento **`<div>`** es un contenedor genérico sin un significado semántico en particular. Se utiliza comunmente en el desarrollo de documentos con propósitos estetícos, en conjunto con los atributos `style` y `class`. Tambien puede resultar útil para resolver atributos comunes a los elementos contenidos por el, como por ejemplo `lang` o `title`.*
+
+#### Semántica de texto.
+
+- **`<data>` - Información apta para programas.**
+> *El elemento **`<data>`** permite a los autores proveer una versión de su contenido específicamente diseñada para programas. Dicha codificación debe ser provista en el atributo requerido `value`. Este elemento puede ser útil en situaciones en las que es necesario facilitar el acceso o interacción de programas con el contenido del documento.* 
+
+- **`<time>` - Fecha y/u hora.**
+> *El elemento **`<time>`** representa fechas, horas, desplasamientos de zonas horarios y duraciones. Adicionalmente, una versión especifica para programas de los contenidos del elemento puede ser provista en el atributo `datetime`.*
+
+- **`<code>` - Codigo de computadora.**
+> *El elemento `<code>` representa a un fragmento de código de computadora, que puede ser cualquier texto legible para computadoras. Entre muchos otros ejempolos, puedes encontrar dentro del elemento `<code>`, una parte de un programa en cualquier lenguaje de programación, un documento de HTML o XML, un conjuto de declaraciones CSS, los contenidos de un archivo de configuración, etc.*
+
+- **`<sub>` - Texto en subíndice.**
+> *El elemento **`<sub>`** representa un subíndice.*
+
+- **`<sup>` - Texto en superíndice.**
+> *El elemento **`<sup>`** representa el superíndice.* 
+
+- **`<i>` - Texto desplasado de la prosa normal.**
+> *Muestra el texto marcado con un estilo en cursiva o italica.* 
+
+- **`<b>` - Texto desplazado del contenido circuntante.**
+> *Indica que el texto debe ser representado con una variable **bold**, o **negrita**, de la tipografia que se esté usando.*
+
+- **`<a>` - Hypervinculo.**
+> *El elemento `Anchor` **`<a>`** crea un enlace a otras paginas de internet, archivos o ubicaciones dentro de la misma página web, direcciones de correo, o cualquier otra URL.*
+
+- **`<em>` - Texto con énfesis.**
+> *El elemento **`<em>`** es el apropiado para marcar con énfasis las partes importantes de un texto. El elemento `<em>` puede ser anidado, con cada nivel de anidamiento indicando un mayor grado de énfasis.*
+
+- **`<strong>` - Texto con mayor énfasis**
+> *El elemento **`<strong>`** es el apropiado para marcar con especial énfasis las partes más importantes de un texto.*
