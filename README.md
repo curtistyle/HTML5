@@ -120,3 +120,20 @@ A continuacion una lista de elementos estandar de HTML5:
 
 - **`<strong>` - Texto con mayor énfasis**
 > *El elemento **`<strong>`** es el apropiado para marcar con especial énfasis las partes más importantes de un texto.*
+
+- **`<mark>` - Resalta un texto.**
+> *El elemento **`<mark>`** representa un texto **marcado** o **resaltado** como referencia o anotación, debido a su relevancia o importancia en un contexto particular.*
+
+- **`<bdi>` - Aisla texto para el formateo bidireccional.**
+> *El elemento **`<bdi>`** aísla a un trozo de texto del contenido circunstante con propósitos de formateo de texto. Este elemento resulta muy útil en situaciones en las que el algoritmo bidireccional, responsable de decir automáticamnte la dirección del texto, pueden "confundirse" y cambiar incorrectamente la dirección del texto.*
+
+- **`<br>` - Quiebre de linea.**
+> *El elemento **`<br>`** produce un salto de linea en el texto (retorno de carro). Es util para escribir un poema o una dirección, donde la división de las líneas es significante.*
+
+- **`<wbr>` - Oportunidad de quiebre de linea.**
+> *El elemento **`<wbr>` world break opportunity** representa una posición dentro del texto donde el explorador puede opcionalmente saltar una linea, aunque sus reglas de salto de línea de otra manera no crearían un salto de posición.*
+
+#### Contenido incrustado.
+
+-**`<picture>` - Imagen con múltiples origenes.**
+> *El elemento **`picture`** es un contenedor usado para especificar múltiples elementos `<source>` y un elemento `<img>` contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.*
