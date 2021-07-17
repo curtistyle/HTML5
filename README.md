@@ -136,4 +136,37 @@ A continuacion una lista de elementos estandar de HTML5:
 #### Contenido incrustado.
 
 -**`<picture>` - Imagen con múltiples origenes.**
-> *El elemento **`picture`** es un contenedor usado para especificar múltiples elementos `<source>` y un elemento `<img>` contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.*
+> *El elemento **`<picture>`** ha sido diseñado para proveer soporte nativo para imágenes adaptativas en HTML5. Cuando se utiliza en conjunto con `<source>` e `<img>` atúa como una imagen que será cargada de manera diferente de acuerdo a las propiedades del dispositivo en el que se muestre. En otras palabras, los navegadores que lo soporten cargarán una imagen diferente (provista por los elementos `<source>`) para cada tipo de dispositivo especificado. Un elemento **`<picture>`** puede contener cualquier número de elementos `<source>` seguidos por un elemento `<img>`. Cada elemento `<source>` proveerá un tipo de dispositivo distinto (densidad de pixeles, tamaño de área de visualización, formato de imagen, etc.), mientras que el elemento `<img>` representará a la imagen misma y constituirá un último recurso para los casos en que ninguno de los elementos `<source>` pueda aplicarse y/o el soporte para `<picture>` no esté presente.*
+
+- **`<source>` - Recurso de medios alternativos.**
+> *El elemento **`<source>`** permite a los autores proveer diferentes versiones de un archivo en los elmentos de medios (`<audio>` y `<video>`) y las ímagenes (`<picture>`). Un elemento de medios o imagen puede contener uno o mas elementos `<source>`, cada uno de los cuales provee un versión diferente del medio (codificado utilizando un códec diferente) o imagen (en diferentes tomaños o formatos). Entonces, queda en manos del navegador elegir que recurso cargar, una decisión que tomará en base a los formatos que soporta y a las dimensiones de la imagen (mejor concidencia).*
+
+- **`<img>` - Imagen.**
+> *El elemento **`<img>`** representa a una imagen, lo cual es un recurso externo que puede ser incrustado en el cuerpo de un documento. La ubicación de dicho recurso externo debe especificarse en el atributo `<src>`.*
+
+- **`<video>` - Video.**
+> *El elemento **`<video>`** incrusta recursos de video en un documento. Aunque es muy fácil de utilizar, este elemento puede ser muy adaptable, poderoso y compatible con la mayoría de los navegadores.* 
+
+> *Los autores tienen dos formas para indicarle a los navegadores qué recurso se debe cargar. El primero, y más directo, es especificando el URI del recurso en el atributo `src`. El segundo método incrementa la compatibilidad entre navegadores, al trabajar junto al elemento `<source>`. Con el elemento `<source>` se pueden proveer diferentes alternativas del mismo recurso, y dejar que el navegador elija la que se adapta mejor a sus características.* 
+
+> *Indistintamente de la forma que se elija para incluir la fuente del video, siempre se podrá llenar al elemento con contenido alternativo, de modo que los navegadores que no lo soporten tengan algo que mostrar. Esto resulta muy útil para autores que necesiten desarrollen sitios compatibles con navegadores antiguos, ya que pueden proveer alternativas en reproductores de video Flash o un mensaje que informe al usuario acerca del problema de soporte (y posibles formas de resolverlo). Si el navegador soporta al elemento `<video>`, el contenido alternativo será simplemente desestimado.*
+
+- **`<Audio>` - Audio.**
+> *El elemento **`<audio>`** incrusta recursos de audio en un documento. Aunque es muy fácil de utilizar, este elemento puede ser muy adaptable, poderoso y compatible con la mayoría de los navegadores.*
+
+> *Los autores tienen dos formas para indicarle a los navegadores qué recurso se debe cargar. El primero, y más directo, es especificando el URI del recurso en el atributo `src`. El segundo método incrementa la compatibilidad entre navegadores, al trabajar junto al elemento `<source>`. Con el elemento `<source>` puedes proveer diferentes alternativas del mismo recurso, y dejar que el navegador elija la que se adapta mejor a sus características.*
+
+> *Cualquier forma que elijas de incluir la fuente del audio, siempre podrás llenar al elemento con contenido alternativo, de modo que los navegadores que no lo soporten tengan algo que mostrar. Esto resulta muy útil para autores que necesiten desarrollen sitios compatibles con navegadores antiguos, ya que pueden proveer alternativas en reproductores de audio Flash o un mensaje que informe al usuario acerca del problema de soporte (y posibles formas de resolverlo). Si el navegador soporta al elemento `<audio>`, el contenido alternativo será simplemente desestimado.*
+
+### Atributos Globales.
+
+- **Accesskey**
+> Proporciona una pista para generar un atajo de teclado para el elemento actual. Este atributo consta de una lista de caracteres separados por espacios. El navegador debe utilizar el primero que exista en la distribución del teclado del ordenador.
+
+- **autocapitalize**
+> Controla si la entrada de texto se pone en mayúsculas automáticamente a medida que el usuario la introduce o edita. Puede tener los siguientes valores:
+
+- `off` o `none`, no se aplica capitalización automática (todas las letras están predeterminadas en minúsculas)
+- `on` o `sentences`, la primera letra de cada oración de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas
+- `words`, la primera letra de cada palabra de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas
+- `characters`, todas las letras de manera predeterminada deben estar en mayúsculas
