@@ -226,3 +226,20 @@ A continuacion una lista de elementos estandar de HTML5:
 > Un atributo enumerado define si se puede verificar el elemento para detectar errores ortográficos. Puede tener los siguientes valores:
 >- `true`, el cual indica que, si es posible, el elemento se debe revisar para detectar errores ortográficos;
 >- `false`, indica que el elemento no se debe revisar para detectar errores ortográficos.
+
+- **style**
+> Contiene declaraciones de estilo CSS que se aplicarán al elemento. Ten en cuenta que se recomienda que los estilos se definan en un archivo o archivos separados. Este atributo y el elemento `<style>` principalmente tienen el propósito de permitir un estilo rápido, por ejemplo, con fines de prueba.
+
+- **tabindex**
+> Un atributo entero que indica si el elemento puede tomar el foco de entrada *(es enfocable)*, si debe participar en la navegación secuencial del teclado y, de ser así, en qué posición. Puede tomar varios valores:
+> - *un valor negativo* significa que el elemento se debe poder enfocar, pero no debe ser accesible mediante la navegación secuencial del teclado.
+> - `0` significa que el elemento se debe poder enfocar y ser accesible a través de la navegación secuencial del teclado, pero su orden relativo está definido por la convención de la plataforma.
+> - un *valor positivo* significa que el elemento se debe poder enfocar y ser accesible mediante la navegación secuencial del teclado; el orden en el que se enfocan los elementos es el valor creciente del tabindex. Si varios elementos comparten el mismo `tabindex`, su orden relativo sigue sus posiciones relativas en el documento.
+
+- **title**
+> Contiene un texto que representa información de advertencia relacionada con el elemento al que pertenece. Normalmente, pero no necesariamente, dicha información se puede presentar al usuario como información sobre herramientas.
+
+- **translate** (experimental)
+> Un atributo enumerado que se utiliza para especificar si los valores de atributo de un elemento y los valores de sus hijos de nodo `Text` (en-US) se deben traducir cuando la página está localizada, o si se deben dejar sin cambios. Puede tener los siguientes valores:
+> - la cadena vacía y `yes`, indican que el elemento se traducirá.
+> - `no`, lo cual indica que el elemento **no** se traducirá.
