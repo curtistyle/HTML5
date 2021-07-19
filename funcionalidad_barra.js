@@ -1,4 +1,6 @@
-var mivideo, reproducir, barra, progreso;
+var mivideo, reproducir, barra, progreso, maximo;
+
+maximo = 255;
 
 function comentar(){
     mivideo=document.getElementById("mivideo");
@@ -8,7 +10,7 @@ function comentar(){
 
     reproducir.addEventListener("click",clicando,false);
 
-    progreso.addEventListener("click", adelantado,false);
+    barra.addEventListener("click", adelantando,false);
    
 }
 
@@ -16,13 +18,35 @@ function clicando(){
     /* Si el video no se encuentra pausado y ademas el video no se encuentra finalizado, entonces detiene el video(pausa), de lo contrario play */
     if((mivideo.paused==false) && (mivideo.ended==false)) {
         mivideo.pause();
-        reproducir.innerHTML="[>"
+        reproducir.innerHTML="[>";
     }
     else{
         mivideo.play();
-        reproducir.innerHTML="||"
+        reproducir.innerHTML="||";
+
+        bucle=setInterval(estado,1000);
     }
 
+}
+
+function estado(){
+    if(mivideo.ended==false){
+        var total = parseInt(mivideo.currentTime*maximo/mivideo.duration);
+
+        progreso.style.width = total + "px";
+    } 
+}
+
+function adelantando(posicion){
+    if((mivideo.paused==false) && (mivideo.ended==false)){
+        var ratonx= posicion.pageX-barra.offsetLeft;
+
+        var nuevotiempo=ratonx*mivideo.duration/maximo;
+
+        mivideo.currentTime = nuevotiempo;
+
+        progreso.style.width = ratonx+"px";
+    }
 }
 
 window.addEventListener("load",comentar,false);
