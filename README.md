@@ -158,6 +158,31 @@ A continuacion una lista de elementos estandar de HTML5:
 
 > *Cualquier forma que elijas de incluir la fuente del audio, siempre podrás llenar al elemento con contenido alternativo, de modo que los navegadores que no lo soporten tengan algo que mostrar. Esto resulta muy útil para autores que necesiten desarrollen sitios compatibles con navegadores antiguos, ya que pueden proveer alternativas en reproductores de audio Flash o un mensaje que informe al usuario acerca del problema de soporte (y posibles formas de resolverlo). Si el navegador soporta al elemento `<audio>`, el contenido alternativo será simplemente desestimado.*
 
+***Atributos:***
+
+`autoplay`
+> Un atributo booleano; si se especifica (incluso aunque el valor sea "false"), el sonido comenzará a reproducirse automáticamente en cuanto sea posible, sin detenerse para terminar de cargar los datos.
+
+`buffered`
+> Un atributo que se puede leer para determinar qué intervalos de tiempo del multimedia se han almacenado en búfer. Este atributo contiene un objeto TimeRanges (en-US).
+
+`controls`
+> Si está presente este atributo, el navegador ofrecerá controles para permitir que el usuario controle la reproducción de audio, incluyendo volumen, búsqueda y pausar/reanudar reproducción.
+
+`loop`
+> Un atributo booleano; si se especifica, al alcanzar el final del audio, realizaremos la búsqueda automáticamente hasta el principio.
+
+`preload`
+> El objetivo de este atributo enumerado es proporcionar una sugerencia al navegador sobre qué cree el autor que proporcionará la mejor experiencia para el usuario . Puede tener uno de los siguientes valores:
+> - `none:` sugiere bien que el autor cree que el usuario no tendrá que consultar ese video, bien que el servidor desea minimizar su tráfico; es decir, esta sugerencia indica que no se debe almacenar en caché este video;
+> - `metadata:` sugiere que aunque el autor piensa que el usuario no tendrá que consultar ese video, es razonable capturar los metadatos (p. ej. longitud);
+> - `auto:` sugiere que el usuario necesita tener prioridad; es decir, esta sugerencia indica que, si es necesario, se puede descargar el video completo, incluso aunque el usuario no vaya a usarlo;
+> - the *empty string*: que es sinónimo del valor `auto`.
+> Si no está configurado, su valor predeterminado está definido por el navegador (es decir, cada navegador puede elegir su propio valor predeterminado), aunque la especificación aconseje que se establezca a `metadatos`.
+
+`src`
+> La URL del audio que se va a insertar. Está sujeta a los Controles de acceso HTTP. Es opcional; en su lugar puedes usar el elemento `source` dentro del bloque de audio para especificar el audio que se va a insertar.
+
 ### Atributos Globales.
 
 - **accesskey**
