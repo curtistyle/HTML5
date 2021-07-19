@@ -160,13 +160,69 @@ A continuacion una lista de elementos estandar de HTML5:
 
 ### Atributos Globales.
 
-- **Accesskey**
+- **accesskey**
 > Proporciona una pista para generar un atajo de teclado para el elemento actual. Este atributo consta de una lista de caracteres separados por espacios. El navegador debe utilizar el primero que exista en la distribución del teclado del ordenador.
 
 - **autocapitalize**
 > Controla si la entrada de texto se pone en mayúsculas automáticamente a medida que el usuario la introduce o edita. Puede tener los siguientes valores:
+> - `off` o `none`, no se aplica capitalización automática (todas las letras están predeterminadas en minúsculas).
+> - `on` o `sentences`, la primera letra de cada oración de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas.
+> - `words`, la primera letra de cada palabra de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas
+> - `characters`, todas las letras de manera predeterminada deben estar en mayúsculas.
 
-- `off` o `none`, no se aplica capitalización automática (todas las letras están predeterminadas en minúsculas)
-- `on` o `sentences`, la primera letra de cada oración de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas
-- `words`, la primera letra de cada palabra de manera predeterminada tiene una letra mayúscula; todas las demás letras están predeterminadas en minúsculas
-- `characters`, todas las letras de manera predeterminada deben estar en mayúsculas
+- **class**
+> Una lista separada por espacios de las clases del elemento. Las clases permiten que CSS y JavaScript seleccionen y accedan a elementos específicos a través de los selectores de clase o funciones como el método `document.getElementsByClassName()`.
+
+- **contenteditable**
+> Un atributo enumerado que indica si el usuario debe poder editar el elemento. Si es así, el navegador modifica su «widget» para permitir la edición. El atributo debe tomar uno de los siguientes valores:
+> - `true` o la *cadena vacía*, la cual indica que el elemento debe ser editable.
+> - `false`, el cual indica que el elemento no debe ser editable.
+
+- **data-***
+> Forma una clase de atributos, denominados atributos de datos personalizados, que permiten el intercambio de información de propiedad entre el `HTML` y su representación `DOM` que pueden utilizar los scripts. Todos estos datos personalizados están disponibles a través de la interfaz `HTMLElement` del elemento en el que está configurado el atributo. La propiedad `HTMLElement.dataset (en-US)` les da acceso.
+
+- **draggable**
+> Un atributo enumerado que indica si el elemento se puede arrastrar mediante la API de arrastrar y soltar. Puede tener los siguientes valores:
+>- `true`, indica que el elemento se puede arrastrar
+>- `false`, indica que el elemento **no** se puede arrastrar.
+
+- **hidden**
+> Un atributo booleano indica que el elemento aún no es o ya no es *relevante*. Por ejemplo, se puede utilizar para ocultar elementos de la página que no se pueden utilizar hasta que se haya completado el proceso de inicio de sesión. El navegador no representará tales elementos. Este atributo no se debe utilizar para ocultar contenido que se podría mostrar legítimamente.
+
+- **id**
+> Define un identificador (ID) único que debe ser único en todo el documento. Su propósito es identificar el elemento al vincularlo (usando un identificador de fragmento), al escribir un script o al aplicarle estilo (con CSS).
+
+- **inputmode (en-US)**
+> Proporciona una pista a los navegadores sobre el tipo de configuración de teclado virtual que se debe utilizar al editar este elemento o su contenido. Se usa principalmente en elementos `<input>`, pero se puede usar en cualquier elemento mientras esté en modo `contenteditable`.
+
+- **is**
+> Te permite especificar que un elemento HTML estándar se debe comportar como un elemento integrado personalizado registrado (consulta Uso de elementos personalizados para obtener más detalles).
+
+- **itemid**
+> El identificador único y global de un artículo.
+
+- **itemprop**
+> Se usa para agregar propiedades a un elemento. Se puede especificar a cada elemento HTML un atributo `itemprop`, donde un `itemprop` consiste en un par de nombre y valor.
+
+- **itemref**
+> Las propiedades que no son descendientes de un elemento con el atributo `itemscope` se pueden asociar con el elemento usando un `itemref`. Proporciona una lista de IDs de elementos (no itemids) con propiedades adicionales en otras partes del documento.
+
+- **itemscope**
+> `itemscope` (normalmente) funciona junto con **`itemtype`** para especificar que el HTML contenido en un bloque es sobre un elemento en particular. `itemscope` crea el *«Item»* y define el alcance del `itemtype` asociado con él. `itemtype` es una URL válida de un vocabulario (tal como schema.org) que describe el elemento y las propiedades de su contexto.
+
+- **itemtype (en-US)**
+> Especifica la URL del vocabulario que se utilizará para definir `itemprop`s (propiedades del elemento) en la estructura de datos. **`itemscope`** se utiliza para establecer el alcance de la estructura de datos en la que estará activo el vocabulario establecido por `itemtype`.
+
+- **lang**
+> Ayuda a definir el idioma de un elemento: el idioma en el que se encuentran los elementos no editables o el idioma en el que el usuario debe escribir los elementos editables. El atributo contiene una “etiqueta de idioma” (compuesta de “subetiquetas de idioma” separadas por guiones) en el formato definido en Etiquetas para identificar idiomas (BCP47). xml:lang tiene prioridad sobre él.
+
+- **part (en-US)**
+> Una lista separada por espacios de los nombres de las partes del elemento. Los nombres de las partes permiten que CSS seleccione y aplique estilo a elementos específicos en la sombra de un árbol mediante el pseudoelemento ::part (en-US).
+
+- **slot**
+> Asigna un espacio en la sombra de un árbol DOM de sombra (en-US) a un elemento: Un elemento con un atributo `slot` es asignado al espacio creado por el elemento `<slot>` cuyo valor del atributo `name` coincide con el valor del atributo `slot`.
+
+- **spellcheck**
+> Un atributo enumerado define si se puede verificar el elemento para detectar errores ortográficos. Puede tener los siguientes valores:
+>- `true`, el cual indica que, si es posible, el elemento se debe revisar para detectar errores ortográficos;
+>- `false`, indica que el elemento no se debe revisar para detectar errores ortográficos.
