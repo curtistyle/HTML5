@@ -9,12 +9,18 @@
 <body>
     <section>
         <form name="miformulario" id="miformulario" method="get">
-            <!-- Email:&nbsp;<input type="email" name="email" id="email"><br><br>
+            Email:&nbsp;<input type="email" name="email" id="email" required multiple><br><br>
             Buscar: &nbsp;<input type="search" name="buscar" id="buscar"><br><br>
-            URL:&nbsp;<input type="url" name="url" id="url"> -->
-            Edad:&nbsp;<input type="number" name="edad" id=edad min="1" max="100">
+            URL:&nbsp;<input type="url" name="url" id="url" autofocus><br><br>
+            Edad:&nbsp;<input type="number" name="edad" id=edad min="0" max="100" step="5" placeholder="Multiplos de 5"><br><br>
+            Fecha:&nbsp;<input type="datetime" name="fecha" id="fecha"><br><br>
+            C. Postal:&nbsp;<input pattern="[0-9]{4}" name="cpostal" id="cpostal">
             <input type="submit" value="Enviar...">
         </form>
-    </section>
+    </section><br>
+
+    <img src="img/americana.jpg" width="200" height="200"><br>
+    Nomnre:&nbsp;<input type="text" name="nombre" id="nombre" form="miformulario"> 
+
 </body>
 </html>
