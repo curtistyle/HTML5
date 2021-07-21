@@ -8,18 +8,18 @@ A continuacion una lista de elementos estandar de HTML5:
 #### Elemento de Raiz.
 
 
-- **`<html>` - Contenedor principal.** 
+- ##### **`<html>` - Contenedor principal.** 
 > *El elemento **`<html>`** representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.*
 
 #### Metadatos del documento.
 
-- **`<head>` - Sección de enzabezado del documento.**
+- ##### **`<head>` - Sección de enzabezado del documento.**
 > *El elemento **`<head>`** provee información general (metadatos) acerca del documento, incluyendo su titulo y enlaces a script y hojas de estilos.*
 
-- **`<link>` - Información relacionada para el documneto.**
+- ##### **`<link>` - Información relacionada para el documneto.**
 > *El elemento **`<link>`** especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. Este elemento es mas frecuentemente usado para enlazar hojas de estilos.*
 
-- **`<style>` - Atributos presentacionales.**
+- ##### **`<style>` - Atributos presentacionales.**
 > *El atributo global **`<style>`** contiene declaraciones de estilo CSS a ser aplicados a un elemento. Notar que es recomendado para los estilos ser definidos en archivo o archivos separados.*
 
 #### Secciones
