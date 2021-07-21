@@ -183,6 +183,54 @@ A continuacion una lista de elementos estandar de HTML5:
 `src`
 > La URL del audio que se va a insertar. Está sujeta a los Controles de acceso HTTP. Es opcional; en su lugar puedes usar el elemento `source` dentro del bloque de audio para especificar el audio que se va a insertar.
 
+### Formularios
+- ##### **`<form>` - Formulario**
+> El elemento `<form>` inserta un componente diseñado para contener controles con los que el usuario puede interactuar para enviar información de regreso al servidor. Este elemento es comúnmente usado para recolectar información de los visitantes del sitio, como preferencias, comentarios, opiniones y muchas cosas más. También es muy importante en el proceso de acceso que muchos sitios web proveen.
+
+> De todos sus atributos, dos tienen mayor importancia y son habitualmente utilizados: `action` y `method`. El atributo `action` indica la ubicación del programa que procesará la información enviada por el navegador, cuando el formulario sea despachado. Este programa está escrito en cualquier lenguaje del lado servidor y se supone que esté preparado para recibir y procesar los datos del formulario.
+
+> Por otra parte, el atirbuto `method` indica cómo debe el navegador adjuntar los datos del formulario a la petición. Es recomendable usar el método "POST" debido a que éste oculta la información enviada y permite la transmisión de datos binarios. Sin embargo, algunas situaciones específicas pueden requerir el uso del método GET.
+
+> Al margen de esto y de algunos otros atributos, el elemento `<form>` es simplemente un contenedor para muchos otros elementos, que en su mayoría representan una amplia gama de controles. Estos controles se listan a continuación:
+>> - `submit:` envía el formulario al agente procesador.
+>> - `reset:` restaura todos los controles en el formulario a sus valores iniciales.
+>> - `button:` no lleva a cabo ninguna acción.
+>> - `menu:` muestra un menú.
+
+> - `<fieldset>`: agrupa temáticamente a un conjunto de controles.
+
+> - `<input>`: uno de muchos controles de acuerdo al valor del atributo type. Éstos son:
+>> - `hidden:` un control oculto utilizado para enviar información al servidor, típicamente manejado por programas.
+>> - `text:` un control usado para la entrada de una sola línea de texto.
+>> - `search:` igaul a text pero con fines de búsqueda.
+>> - `tel:` un control usado para proveer un número de teléfono.
+>> - `url:` una caja de texto usada para el ingreso de un único URL absoluto.
+>> - `email:` un control diseñado para editar una o más direcciones de e-mail.
+>> - `password:` una caja de texto para la edición de contraseñas, donde los caracteres son representados por puntos.
+>> - `datetime:` un control para ingresar una fecha y hora global específica.
+>> - `date:` un control para ingresar una fecha específica.
+>> - `month:` un control para ingresar un mes específico.
+>> - `week:` un control para ingresar una semana específica.
+>> - `time:` un control para ingresar una hora específica.
+>> - `number:` un control para ingresar un número.
+>> - `range:` un control para ingresar uno o dos números dentro de un rango.
+>> - `color:` un control para ingresar un color.
+>> - `checkbox:` un control para ingresar un valor booleano (verdadero/falso).
+>> - `radio:` un control para elegir una única opción entre varias.
+>> - `file:` un control usado para subir archivos al servidor.
+>> - `submit:` un botón usado para enviar el formulario.
+>> - `image:` igual a submit pero con la habilidad de verse como una imagen en lugar de usar la apariencia predeterminada de los botones.
+>> - `reset:` un botón usado para reiniciar los controles del formulario a sus valores iniciales.
+>> - `button:` un botón sin una acción predeterminada asociada.
+
+> - `<keygen>`: un control usado para generar un par de llaves pública/privada.
+> - `<label>`: un elemento utilizado para proveer una etiqueta a los controles del formulario.
+> - `<object>`: un objeto que representa una imagen, que puede ser usado como un mapa de imagen del lado cliente.
+> - `<output>`: un elemento usado para mostrar el resultado de un cálculo llevado a cabo por la página, o el resultado de la acción de un usuario, basada en los controles del formulario.
+> - `<select>`: un control usado para seleccionar una o más opciones de una lista.
+> - `<textarea>`: un control usado para ingresar un trozo de texto que consta de una o más líneas.
+> - `<img>`: una imagen que puede ser usada como un mapa de imagen del lado cliente.
+
 ### Atributos Globales.
 
 - **accesskey**
