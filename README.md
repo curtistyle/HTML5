@@ -183,7 +183,44 @@ A continuacion una lista de elementos estandar de HTML5:
 `src`
 > La URL del audio que se va a insertar. Está sujeta a los Controles de acceso HTTP. Es opcional; en su lugar puedes usar el elemento `source` dentro del bloque de audio para especificar el audio que se va a insertar.
 
+#### Información tabulada.
+
+- ##### **`<table>` - Tabla**
+> El elemento `<table>` representa una tabla. Ésta permiten a los autores representar información tabulada en un documento. En lo que respecta al código, una tabla consiste básicamente de un grupo de filas con contiene, cada una, a un grupo de celdas.
+
+- ##### **`<caption>` - Titulo de una tabla**
+> El elemento `<caption>` representa un titulo o leyenda para la tabla (`<table>`) en la que es declarado, y se supone provee una muy corta pero precisa descripción acerca del contenido o propósito de ésta. Un buen `<caption>` deberían introducir contexto para una tabla, haciéndola significativamente más fácil de comprender.
+
+- ##### **`<colgroup>` - Grupo de columnas**
+> El elemento `<colgroup>` representa a un grupo de una o más columnas de una tabla (`<table>`). Este elemento puede también proveer atributos comunes a las columnas que representa de la misma forma en que lo hace el elemento `<col>`.
+> Para especificar el número de columnas consecutivas que serán agrupadas por este elemento, los autores pueden usar uno de dos métodos (pero no ambos): declarando el atributo `span` con el número de columas agrupadas como valor o agregando uno o más elementos `<col>` como hijos. Cualquiera sea el método elegido, el conteo de columnas va de izquierda a derecha, de modo que para tener un elemento `<colgroup>` que represente a la tercera columna de una tabla, se debe primero representar con otro elemento `<colgroup>` a las dos primeras.
+
+- ##### **`<col>` - Establece atributos para columna**
+> El elemento `<col>` representa una o más columnas en una tabla (`<table>`). Este elemento se vuelve útil cuando se precisa asignar un conjunto de atributos a todas las celdas en una o más columnas. En tales casos, los atributos pueden ser declarados directamente en el elemento `<col>` y sus efectos serán automáticamente transferidos a las columnas que éste representa.
+> Mediante el atributo `span`, los autores pueden especificar cuántas columnas serán afectadas por el elemento `<col>`. El conteo de columnas va de izquierda a derecha, de modo que para tener un elemento `<col>` que represente a la tercera columna de una tabla, debes primero representar con otro elemento `<col>` a las dos primeras.
+
+- ##### **`<tbody>` - Cuerpo de la tabla**
+> El elemento `<tbody>` contiene a un bloque de filas (`<tr>`) que representaa a la sección del cuerpo de una tabla (`<table>`). Este elemento puede ser útil para especificar qué filas proveen información de contenido en la tabla, en contraste con aquellas que son parte del encabezado (`<header>`) o el pie (`<footer>`).
+
+- ##### **`<thead>` - Encabezado de la tabla**
+> El elemento `<thead>` contiene a un bloque de filas (`<tr>`) que representa a la sección de encabezado de una tabla (`<table>`), donde las celdas de encabezado (`<th>`) son encontradas habitualemnte. Este elemento puede ser útil para especificar qué filas proveen información de encabezado para el resto de la tabla. De todos modos, no es requerido que las celdas de encabezado pertenezcan a una sección de encabezado y pueden tranquilamente ser declaradas directamente en el elemento `<table>`.
+
+- ##### **`<tfoot>` - Pie de tabla**
+> El elemento `<tfoot>` contiene a un bloque de filas (`<tr>`) que representa a la sección de pie de una tabla (`<table>`). Este elemento puede ser útil para insertar celdas que provean, entre otros, resúmenes o valores promedio para la información de cada columna.
+
+- ##### **`<tr>` - Fila**
+> El elemento `<tr>` representa a una fila de una tabla (`<table>`). En HTML, las tablas están formadas por un conjunto de filas donde cada una contiene a un número de celdas. Por lo tanto, este elemento se encuentra habitualemente conteniendo a una o más celdas, que pueden ser de encabezado (`<th>`) o de datos (`<td>`).
+
+- ##### **`<td>` - Celda común**
+> El elemento `<td>` representa a una celda de datos de una tabla (`<table>`). En HTML, las tablas están formadas por un conjunto de filas donde cada una contiene a un número de celdas. Por lo tanto, este elemento se encuentra habitualmente dentro de un elemento de fila (`<tr>`).
+> Los atributos `colspan` y `rowspan` pueden ser usados para hacer que las celdas abarquen dos o más celdas en dirección horizontal o vertical, respectivamente.
+
+- ##### **`<th>` - Celda de encabezado**
+> El elemento `<th>` representa a una celda de encabezado en una tabla (`<table>`). Las celdas de encabezado están pensadas para proveer información de encabezado para las celdas de datos (`<td>`). Por lo tanto, es común encontrar a este tipo de celdas dentro de filas (`<tr>`) que son parte de la sección de encabezado (`<thead>`) o pie (`<tfoot>`) de una tabla.
+> Los atributos `colspan` y `rowspan` pueden ser usados para hacer que las celdas abarquen dos o más celdas en dirección horizontal o vertical, respectivamente.
+
 ### Formularios
+
 - ##### **`<form>` - Formulario**
 > El elemento `<form>` inserta un componente diseñado para contener controles con los que el usuario puede interactuar para enviar información de regreso al servidor. Este elemento es comúnmente usado para recolectar información de los visitantes del sitio, como preferencias, comentarios, opiniones y muchas cosas más. También es muy importante en el proceso de acceso que muchos sitios web proveen.
 
